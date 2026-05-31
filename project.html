@@ -1,123 +1,355 @@
 <!DOCTYPE html>
+
 <html lang="nl">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projecten</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        main {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecten | Hasan Haj Taha</title>
 
-        .card-img-top {
-            height: 200px;
-            object-fit: cover;
-        }
-    </style>
+```
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        background: #0d1117;
+        color: white;
+    }
+
+    .navbar {
+        background: #161b22 !important;
+    }
+
+    .project-card {
+        background: #161b22;
+        border: 1px solid #30363d;
+        transition: .3s;
+        height: 100%;
+    }
+
+    .project-card:hover {
+        transform: translateY(-8px);
+    }
+
+    .card-img-top {
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .badge {
+        margin: 2px;
+    }
+
+    footer {
+        background: #161b22;
+    }
+</style>
+```
+
 </head>
 
-<body class="bg-light text-dark">
+<body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="project.html">Project</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                </ul>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+```
+    <a class="navbar-brand fw-bold" href="index.html">
+        Hasan Haj Taha
+    </a>
+
+    <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end"
+         id="navbarNav">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active" href="project.html">
+                    Projecten
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">
+                    Over Mij
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+```
+
+</nav>
+
+<section class="container py-5">
+
+```
+<div class="text-center mb-5">
+
+    <h1 class="display-4 fw-bold text-primary">
+        Mijn Projecten
+    </h1>
+
+    <p class="lead">
+        Hieronder staan projecten die ik tijdens mijn opleiding
+        en in mijn vrije tijd heb ontwikkeld.
+    </p>
+
+</div>
+
+<div class="row g-4 justify-content-center">
+
+
+    <!-- Chess Game -->
+
+<div class="col-lg-6">
+    <div class="card project-card text-white">
+
+```
+    <img src="img/chess-game.jpg"
+         class="card-img-top"
+         alt="Chess Game">
+
+    <div class="card-body">
+
+        <h3>Chess Game</h3>
+
+        <p>
+            Een schaakspel ontwikkeld als teamproject.
+            Gebouwd met HTML, CSS en JavaScript met focus op
+            spel logica, gebruikersinteractie en samenwerking.
+        </p>
+
+        <div class="mb-3">
+            <span class="badge bg-light text-dark">HTML</span>
+            <span class="badge bg-light text-dark">CSS</span>
+            <span class="badge bg-light text-dark">JavaScript</span>
+        </div>
+
+        <a href="https://github.com/ROCMondriaanTIN/sd24-project-p07-show-your-skills-chess-game"
+           target="_blank"
+           class="btn btn-light">
+            GitHub
+        </a>
+
+    </div>
+</div>
+```
+
+</div>
+
+    <!-- Hoger Lager -->
+
+    <div class="col-lg-6">
+        <div class="card project-card text-white">
+
+            <img src="img/hoger-lager.jpg"
+                 class="card-img-top"
+                 alt="Hoger Lager">
+
+            <div class="card-body">
+
+                <h3>Hoger Lager Spel</h3>
+
+                <p>
+                    Een interactief spel waarbij de speler moet raden
+                    of het volgende getal hoger of lager zal zijn.
+                    Ontwikkeld met HTML, CSS en JavaScript.
+                </p>
+
+                <div class="mb-3">
+                    <span class="badge bg-info text-dark">HTML</span>
+                    <span class="badge bg-info text-dark">CSS</span>
+                    <span class="badge bg-info text-dark">JavaScript</span>
+                </div>
+
+                <a href="https://github.com/hasanth47/Hoger-Lager/tree/main"
+                   target="_blank"
+                   class="btn btn-info">
+                    GitHub
+                </a>
+
             </div>
         </div>
-    </nav>
+    </div>
 
-    <!-- Content -->
-    <main class="container text-center">
-        <div>
-            <h1 class="text-primary">Mijn Projecten</h1>
-            <p class="lead">Hier zijn enkele projecten die ik heb gemaakt met HTML, CSS, JavaScript en meer.</p>
+    <!-- Boter Kaas en Eieren -->
 
-            <div class="row justify-content-center mt-4">
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card shadow-sm">
-                        <a href="https://github.com/hasanth47/Hoger-Lager/tree/main">
-                            <img src="img/project1.jpg" class="card-img-top img-fluid" alt="Project 1">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Hoger-Lager Spel</h5>
-                            <p class="card-text">Het Hoger Lager Spel is een eenvoudig spel waarin je moet raden of het
-                                volgende getal hoger of lager zal zijn dan het huidige getal. Ik heb dit spel gemaakt
-                                met HTML, CSS en JavaScript.</p>
-                        </div>
-                    </div>
+    <div class="col-lg-6">
+        <div class="card project-card text-white">
+
+            <img src="img/bke.jpg"
+                 class="card-img-top"
+                 alt="Boter Kaas en Eieren">
+
+            <div class="card-body">
+
+                <h3>Boter Kaas en Eieren</h3>
+
+                <p>
+                    Klassiek Tic-Tac-Toe spel voor twee spelers.
+                    Gebouwd met HTML, CSS en JavaScript.
+                </p>
+
+                <div class="mb-3">
+                    <span class="badge bg-warning text-dark">HTML</span>
+                    <span class="badge bg-warning text-dark">CSS</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
                 </div>
 
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card shadow-sm">
-                        <a href="https://github.com/hasanth47/-Boter-Kaas-en-Eieren">
-                            <img src="img/project2.jpg" class="card-img-top img-fluid" alt="Project 2">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Boter, Kaas en Eieren Spel</h5>
-                            <p class="card-text">Het Boter, Kaas en Eieren Spel is een klassiek spel voor twee spelers.
-                                De spelers zetten om de beurt een “X” of “O” in een 3×3 grid. Ik heb dit spel gebouwd
-                                met HTML, CSS en JavaScript.</p>
-                        </div>
-                    </div>
-                </div>
+                <a href="https://github.com/hasanth47/-Boter-Kaas-en-Eieren"
+                   target="_blank"
+                   class="btn btn-warning">
+                    GitHub
+                </a>
 
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card shadow-sm">
-                        <a href="https://github.com/ROCMondriaanTIN/sd24-project-p03-review-your-experience-htn">
-                            <img src="img/project3.jpg" class="card-img-top img-fluid" alt="Project 3">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Review Your Experience</h5>
-                            <p class="card-text">Een eenvoudige reviewtool waarmee gebruikers hun ervaring kunnen beoordelen via een
-                                formulier. Dit project is gebouwd in teamverband met focus op samenwerking en gebruiksvriendelijkheid.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-12 col-md-6 col-lg-3">
-                    <div class="card shadow-sm">
-                        <a href="https://mia.rocmondriaan.nl/">
-                            <img src="img/maze.jpg" class="card-img-top img-fluid" alt="Project 4">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">Maza</h5>
-                            <p class="card-text">Er is geen link omdat het andere omgeving is.
-                                Een doolhofspel waarin de speler de uitgang moet vinden. Gemaakt met HTML, JavaScript en CSS.</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-    </main>
+    </div>
 
-    <!-- Footer -->
-    <footer class="bg-primary text-white py-4">
-        <div class="container text-center">
-            <div class="mb-3">
-                <a href="#" class="text-white fs-5 text-decoration-none mx-2">F</a>
-                <a href="#" class="text-white fs-5 text-decoration-none mx-2">X</a>
-                <a href="#" class="text-white fs-5 text-decoration-none mx-2">I</a>
+    <!-- SDG Dashboard -->
+
+    <div class="col-lg-6">
+        <div class="card project-card text-white">
+
+            <img src="img/sdg-dashboard.jpg"
+                 class="card-img-top"
+                 alt="SDG Dashboard">
+
+            <div class="card-body">
+
+                <h3>SDG Dashboard</h3>
+
+                <p>
+                    Interactief dashboard voor SDG-statistieken met
+                    grafieken, filters en database-integratie.
+                </p>
+
+                <div class="mb-3">
+                    <span class="badge bg-primary">Next.js</span>
+                    <span class="badge bg-primary">React</span>
+                    <span class="badge bg-primary">TypeScript</span>
+                    <span class="badge bg-primary">Tailwind</span>
+                    <span class="badge bg-primary">Chart.js</span>
+                    <span class="badge bg-primary">MySQL</span>
+                </div>
+
+                <a href="https://github.com/ROCMondriaanTIN/sd24-project-p06-dashboard-fisabililah"
+                   target="_blank"
+                   class="btn btn-primary">
+                    GitHub
+                </a>
+
             </div>
-            <p class="mb-0">© 2025 Hasan Haj Taha</p>
         </div>
-    </footer>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Budget Buddy -->
+
+    <div class="col-lg-6">
+        <div class="card project-card text-white">
+
+            <img src="img/budget-buddy.jpg"
+                 class="card-img-top"
+                 alt="Budget Buddy">
+
+            <div class="card-body">
+
+                <h3>Budget Buddy</h3>
+
+                <p>
+                    Webapplicatie voor inkomsten en uitgaven met
+                    CRUD-functionaliteiten en databaseopslag.
+                </p>
+
+                <div class="mb-3">
+                    <span class="badge bg-success">PHP</span>
+                    <span class="badge bg-success">Symfony</span>
+                    <span class="badge bg-success">MySQL</span>
+                    <span class="badge bg-success">Bootstrap</span>
+                </div>
+
+                <a href="https://github.com/ROCMondriaanTIN/sd24-project-p05-budget-buddy-mhd"
+                   target="_blank"
+                   class="btn btn-success">
+                    GitHub
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Review -->
+
+    <div class="col-lg-6">
+        <div class="card project-card text-white">
+
+            <img src="img/review.jpg"
+                 class="card-img-top"
+                 alt="Review">
+
+            <div class="card-body">
+
+                <h3>Review Your Experience</h3>
+
+                <p>
+                    Platform waar gebruikers reviews kunnen plaatsen,
+                    beheren en ervaringen kunnen delen.
+                </p>
+
+                <div class="mb-3">
+                    <span class="badge bg-danger">HTML</span>
+                    <span class="badge bg-danger">CSS</span>
+                    <span class="badge bg-danger">JavaScript</span>
+                    <span class="badge bg-danger">PHP</span>
+                </div>
+
+                <a href="https://github.com/ROCMondriaanTIN/sd24-project-p03-review-your-experience-htn"
+                   target="_blank"
+                   class="btn btn-danger">
+                    GitHub
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+```
+
+</section>
+
+<footer class="text-center py-4">
+    <p class="mb-0">
+        © 2026 Hasan Haj Taha
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-
 </html>
